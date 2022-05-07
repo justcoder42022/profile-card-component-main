@@ -1,0 +1,131 @@
+:root{
+    
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+--Dark-gray: hsl(0, 0%, 59%);
+font-family: 'Kumbh Sans', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{max-width: 1600px; 
+    height: 100vh;
+    background-color: var(--Dark-cyan); 
+    position: relative; 
+}
+.topbg{
+    position: absolute;
+    width: 48.05%;
+    height: 65.2%;
+    
+    }
+.topbg img{
+  
+   display: block;
+  position: relative;
+  object-fit: contain;
+  top: -70%;
+  left: -10%;
+  height: 170%;
+  width: 100%;
+   
+}
+.botbg{
+    position: absolute;
+    width: 47.7%;
+    height: 50.3%;
+    overflow: hidden; 
+    bottom: 0;
+    right: 0;
+   
+    }
+.botbg img{
+ display: block;
+  position: relative;
+  object-fit: fill;
+  
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    z-index: 1;
+    width: 25rem;
+    background-color:white;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; display: noe;
+}
+main::before{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 11rem;
+    background-image: url("images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+
+}
+
+.dp-img{
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 35%;
+    border-radius: 999px;
+    border: .5rem solid white;
+}
+
+img+h1{
+    padding-top: 4rem;
+}
+
+.status{
+    display: flex;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-top: 2px solid hsla(227, 10%, 46%, .3);;
+    width: 100%;
+    justify-content: space-around;
+}
+h1{
+    font-size: 18px;
+}
+p,.age{
+    color: var(--Dark-gray);
+}
+@media (max-width: 950px){
+  .topbg{
+    position: absolute;
+    width: 48.05%;
+    height: 65.2%;
+    
+    }
+     .topbg img{
+  
+        display: block;
+       position: relative;
+       object-fit: fill;
+       top: -50%;
+       left: -60%;
+       height: 100%;
+       width: 170%;
+        
+     }
+}
